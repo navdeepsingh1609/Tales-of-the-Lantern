@@ -52,4 +52,4 @@ Built-in image generation edited each approved master into a matching listening 
 | `content/storyboard/tavern/master-v1.png`      | `content/storyboard/tavern/listening-v1.png`      | `apps/web/public/scenes/tavern/listening-v1.png`      |
 | `content/storyboard/observatory/master-v1.png` | `content/storyboard/observatory/listening-v1.png` | `apps/web/public/scenes/observatory/listening-v1.png` |
 
-The default generated originals remain in Codex’s generated-images directory; the app uses the project-local copies above.
+The default generated originals remain in the local image-generation output directory; the app uses the project-local copies above.
