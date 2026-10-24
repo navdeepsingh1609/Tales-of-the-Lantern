@@ -42,7 +42,6 @@ Never silently mock. The HUD shows the current level.
 cut/
 ├── README.md
 ├── AGENT_PROMPT.md
-├── .env.example
 ├── .gitignore
 ├── package.json                 # pnpm workspaces + scripts: dev, build, spike, verify:env, lint, test
 ├── pnpm-workspace.yaml

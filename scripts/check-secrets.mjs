@@ -29,7 +29,8 @@ const patterns = [
 const failures = new Set();
 for (const file of files) {
   const basename = file.split('/').at(-1);
-  if (basename?.startsWith('.env') && !basename.endsWith('.example')) failures.add(file);
+  if (basename?.startsWith('.env') || /(?:^|\.)env(?:\.|$)/.test(basename ?? ''))
+    failures.add(file);
   if (/\.(?:pem|key|p12|pfx|keystore|jks)$/i.test(basename ?? '')) failures.add(file);
   const path = resolve(root, file);
   if (existsSync(path) && statSync(path).isFile()) {

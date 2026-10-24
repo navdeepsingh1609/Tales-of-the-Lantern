@@ -12,7 +12,7 @@ Polishing the cinematic storytelling experience and verifying the complete inter
 
 | Area                   | Current result                                                                                                                                                                                                                                                                                         |
 | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Local setup            | Git repository initialized; Node/pnpm project configured; private `.env` ignored; `.env.example` documents variable names. No remote or first commit configured.                                                                                                                                       |
+| Local setup            | Git repository initialized; Node/pnpm project configured; all environment files ignored; credential names are documented in README.md. Repository initialized, committed and connected to GitHub.                                                                                                      |
 | Provider access        | Real Boson TTS and Avatar access verified. Realtime input and text response paths integrated. Native Realtime function tools remain gated after unsuccessful feasibility checks.                                                                                                                       |
 | Saved chapters         | Lighthouse, tavern and observatory stories with 14 cached speaking performances. Selecting and replaying saved chapters does not generate new media.                                                                                                                                                   |
 | Cinematic presentation | Scene-matched landscape speaking shots, shared room references, forest-green styling, ambient video glow and a larger player. Outgoing frames dissolve into the next speaking shot.                                                                                                                    |
@@ -106,3 +106,7 @@ Directing an improvised reply now edits that actual reply and supports original/
 ## Public demo link — 2026-10-24
 
 Added the user-provided Google Drive walkthrough link to README.md and docs/DEMO.md. No application code changed. Video access permissions were not changed or independently verified.
+
+## Environment-file removal — 2026-10-24
+
+Removed the tracked empty environment example at the user’s request and now ignore all environment files, including examples. The real private .env was never tracked and remains local. Updated setup instructions to create a private file directly. No application functionality changed; this update will be committed locally for the user to push.

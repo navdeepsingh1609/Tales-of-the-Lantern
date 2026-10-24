@@ -5,7 +5,7 @@
 - Initialized Git with branch `main`.
 - `.env` exists with permissions `0600`; contents were not displayed.
 - `git check-ignore` excludes `.env`, `.env.local`, `.env.production`, nested app `.env`, dependency/build paths and `.DS_Store`.
-- `.env.example` remains eligible for tracking and contains no key.
+- An empty `.env.example` was initially tracked; it was later removed before submission. All environment files, including examples, are now ignored.
 - TypeScript verifier syntax checked using Node's TypeScript stripping API in an isolated tool runtime.
 - Eleven isolated verifier cases passed: missing key, placeholder, whitespace, offline/no request, authentication refusal, quota refusal, transient rate limit, untrusted error redaction, network exception redaction, invalid audio and valid WAV response.
 - Test transport used synthetic fixtures, not Boson. No claim of working API access or generated audio is made.

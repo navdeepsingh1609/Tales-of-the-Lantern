@@ -10,7 +10,8 @@ Requires Node.js **22.18+** and **pnpm**.
 
 ```bash
 pnpm install --frozen-lockfile
-cp .env.example .env
+touch .env
+chmod 600 .env
 # Set BOSON_API_KEY in .env; GROQ_API_KEY is optional for scene drafting.
 pnpm dev
 ```

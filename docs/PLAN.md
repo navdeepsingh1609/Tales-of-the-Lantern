@@ -16,7 +16,7 @@ Budget: **CA$30 total maximum**, superseding CA$100; reserve at least CA$25 for 
 
 - Initialize a local Git repository on `main`; preserve the supplied specifications.
 - Ignore local environment files, credentials, dependency folders, builds, logs, and caches.
-- Track an empty `.env.example`; create `.env` with owner-only permissions. The human enters the key directly in an editor, never chat or a shell command.
+- Keep all environment files, including examples, out of version control. Create `.env` with owner-only permissions and enter the key directly in an editor.
 - Add a dependency-free TypeScript verifier: local validation, then one documented tiny TTS request, no retries, no raw errors or credential logging.
 - Verify ignore rules and scan tracked/staged content before committing.
 - Human: install Node/pnpm, enter the key, configure Boson monthly cap/warning, then run the verifier. Entries/deadline-in-the-morning confirmed in chat; exact cutoff/time zone still to record.
