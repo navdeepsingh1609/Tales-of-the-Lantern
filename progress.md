@@ -102,3 +102,7 @@ Directing an improvised reply now edits that actual reply and supports original/
 - Strengthened publication checks for Groq, AWS, Google and Slack token formats, credential file extensions, and nonempty secret variables in environment examples. Five isolated scanner fixtures and 15 ignore/allow checks passed. The private environment file remains mode 0600.
 - Application code, runtime configuration and product behavior were not changed in this pass. Git remains unstaged, with no commit or remote configured; the user will run the final identity/commit/remote/push commands.
 - README/demo placeholder and .gitignore are ready for review. Final lint, formatting and secret scan passed; the demo URL and Git author identity remain user-supplied items.
+
+## Public demo link — 2026-10-24
+
+Added the user-provided Google Drive walkthrough link to README.md and docs/DEMO.md. No application code changed. Video access permissions were not changed or independently verified.

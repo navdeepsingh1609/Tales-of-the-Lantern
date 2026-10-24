@@ -2,7 +2,7 @@
 
 A cinematic storytelling studio: direct a fictional cast’s words and delivery, or join their conversation as a fourth character. Built with Higgs Realtime, Higgs TTS and Higgs Avatar.
 
-**[Video demo](docs/DEMO.md)** · [Sample performances](samples/README.md) · [Implementation notes](docs/CINEMATIC-PERFORMANCE.md)
+**[Watch the demo](https://drive.google.com/file/d/1OmTnYf6bVijaLQFR86TgN2de4yxSzwax/view?usp=share_link)** · [Sample performances](samples/README.md) · [Implementation notes](docs/CINEMATIC-PERFORMANCE.md)
 
 ## Run locally
 
@@ -15,7 +15,7 @@ cp .env.example .env
 pnpm dev
 ```
 
-Open **http://127.0.0.1:5173**. The API runs at **http://127.0.0.1:8787**. Credentials stay on the server; never put them in `VITE_` variables.
+For your own development instance, open the address printed by `pnpm dev`. This is not a hosted demo. Credentials stay on the backend; never put them in `VITE_` variables.
 
 Chapter artwork and idle clips are included. Full chapter performances are stored in an ignored local cache: on a fresh clone, use **Scene settings → Prepare chapter** to generate them, or inspect the included sample videos without a key. Generation uses provider credits; cached replay does not. Configure spending controls in the Boson workspace.
 
@@ -23,7 +23,7 @@ Chapter artwork and idle clips are included. Full chapter performances are store
 
 ```mermaid
 flowchart LR
-    UI["React studio"] <-->|"Local API and saved media"| API["Fastify server"]
+    UI["React studio"] <-->|"Backend API and saved media"| API["Fastify server"]
     ENV["Private .env"] --> API
     API -->|"Ephemeral session token"| UI
     UI <-->|"Voice input and dialogue text"| RT["Higgs Realtime"]
@@ -31,7 +31,7 @@ flowchart LR
     TTS -->|"Speech audio"| API
     API -->|"Image and audio"| AV["Higgs Avatar: facial video"]
     AV -->|"Video"| API
-    API <--> CACHE["Local media cache"]
+    API <--> CACHE["Media cache"]
     API -.->|"Optional scene drafting"| GROQ["Groq"]
 ```
 
