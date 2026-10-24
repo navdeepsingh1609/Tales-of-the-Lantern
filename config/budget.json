@@ -1,0 +1,10 @@
+{
+  "currency": "CAD",
+  "projectCeiling": 30,
+  "demoReserve": 25,
+  "developmentCeiling": 5,
+  "paidCallsEnabled": false,
+  "providerSpendControlsConfirmed": true,
+  "castPreparationEnabled": true,
+  "microphoneEnabled": true
+}

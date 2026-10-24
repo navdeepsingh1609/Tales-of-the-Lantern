@@ -1,0 +1,216 @@
+.cut-studio .architecture-sheet-trigger {
+  min-height: 34px;
+  padding: 6px 10px;
+  border: 1px solid var(--studio-line, #b8c4ab38);
+  border-radius: 6px;
+  background: #111a16;
+  color: var(--studio-muted, #a3afa4);
+  font-size: 11px;
+}
+.cut-studio .architecture-sheet-trigger:hover {
+  border-color: #bdc9aa80;
+  color: var(--studio-paper, #e7e6db);
+}
+.cut-studio .architecture-sheet-trigger:focus-visible,
+.cut-studio .architecture-sheet-close:focus-visible,
+.architecture-sources a:focus-visible {
+  outline: 2px solid var(--studio-accent, #bdc9aa);
+  outline-offset: 3px;
+}
+.architecture-sheet {
+  width: min(620px, calc(100vw - 28px));
+  max-width: none;
+  max-height: min(780px, calc(100dvh - 28px));
+  padding: 0;
+  overflow: auto;
+  border: 1px solid #bdc9aa45;
+  border-radius: 12px;
+  background:
+    radial-gradient(ellipse at 95% 0, #bdc9aa12, transparent 46%),
+    linear-gradient(150deg, #17221c, #101713 72%);
+  color: var(--studio-paper, #e7e6db);
+  box-shadow:
+    0 24px 80px #030806bb,
+    inset 0 1px #ffffff0b;
+  scrollbar-color: #596951 #101713;
+}
+.architecture-sheet::backdrop {
+  background: #070c09c9;
+  backdrop-filter: blur(5px);
+}
+.architecture-sheet-inner {
+  padding: clamp(19px, 4vw, 30px);
+}
+.architecture-sheet-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid #bdc9aa25;
+}
+.architecture-sheet-kicker {
+  margin: 0 0 5px;
+  color: var(--studio-accent, #bdc9aa);
+  font-size: 10px;
+  font-weight: 650;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+.cut-studio .architecture-sheet-header h2 {
+  margin: 0;
+  color: var(--studio-paper, #e7e6db);
+  font:
+    500 clamp(22px, 4vw, 29px)/1.2 Cinzel,
+    Georgia,
+    serif;
+}
+.cut-studio .architecture-sheet-close {
+  display: grid;
+  width: 36px;
+  height: 36px;
+  flex: none;
+  place-items: center;
+  border: 1px solid #bdc9aa35;
+  border-radius: 50%;
+  background: #ffffff08;
+  color: #e7e6db;
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+}
+.cut-studio .architecture-sheet-close:hover {
+  background: #ffffff14;
+}
+.architecture-pipeline {
+  position: relative;
+  display: grid;
+  gap: 0;
+  margin: 16px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.architecture-pipeline::before {
+  position: absolute;
+  top: 22px;
+  bottom: 22px;
+  left: 15px;
+  width: 1px;
+  background: linear-gradient(#bdc9aa72, #bdc9aa18);
+  content: '';
+}
+.architecture-pipeline li {
+  position: relative;
+  display: grid;
+  grid-template-columns: 32px minmax(0, 1fr);
+  gap: 11px;
+  padding: 8px 0;
+}
+.architecture-step {
+  display: grid;
+  width: 31px;
+  height: 31px;
+  place-items: center;
+  border: 1px solid #bdc9aa55;
+  border-radius: 50%;
+  background: #17221c;
+  color: #cbd4bc;
+  font-size: 9px;
+  font-variant-numeric: tabular-nums;
+}
+.architecture-pipeline h3,
+.architecture-limits h3 {
+  margin: 1px 0 3px;
+  color: #e9e8dd;
+  font-size: 13px;
+  font-weight: 620;
+}
+.architecture-pipeline p {
+  max-width: 510px;
+  margin: 0;
+  color: var(--studio-muted, #a3afa4);
+  font-size: 11px;
+  line-height: 1.5;
+}
+.architecture-retake {
+  display: flex;
+  gap: 10px;
+  margin: 13px 0 0 43px;
+  padding: 10px 12px;
+  border: 1px solid #bdc9aa32;
+  border-radius: 7px;
+  background: #bdc9aa09;
+  color: #c5cfb8;
+}
+.architecture-retake > span {
+  color: var(--studio-accent, #bdc9aa);
+  font-size: 19px;
+  line-height: 1;
+}
+.architecture-retake p {
+  margin: 0;
+  font-size: 11px;
+  line-height: 1.5;
+}
+.architecture-retake strong {
+  color: #e7e6db;
+}
+.architecture-limits {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #bdc9aa25;
+}
+.architecture-limits h3 {
+  margin-bottom: 8px;
+  color: var(--studio-accent, #bdc9aa);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.architecture-limits ul {
+  display: grid;
+  gap: 5px;
+  margin: 0;
+  padding-left: 17px;
+  color: var(--studio-muted, #a3afa4);
+  font-size: 11px;
+  line-height: 1.45;
+}
+.architecture-limits li::marker {
+  color: #bdc9aa80;
+}
+.architecture-sources {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 13px;
+  margin-top: 17px;
+  padding-top: 12px;
+  border-top: 1px solid #bdc9aa20;
+  color: #859284;
+  font-size: 10px;
+}
+.architecture-sources a {
+  color: #cbd4bc;
+  text-decoration-color: #bdc9aa60;
+  text-underline-offset: 3px;
+}
+.architecture-sources a:hover {
+  color: #f0efdf;
+}
+@media (max-width: 480px) {
+  .architecture-sheet {
+    max-height: calc(100dvh - 16px);
+  }
+  .architecture-sheet-inner {
+    padding: 18px 16px;
+  }
+  .architecture-retake {
+    margin-left: 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .architecture-sheet::backdrop {
+    backdrop-filter: none;
+  }
+}

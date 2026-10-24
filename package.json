@@ -1,0 +1,35 @@
+{
+  "name": "cut-higgs-hackathon",
+  "private": true,
+  "version": "0.0.0",
+  "description": "CUT! — direct a cast of three animated AI actors with your voice (Higgs Audio Hackathon 2026)",
+  "type": "module",
+  "packageManager": "pnpm@12.15.0",
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "scripts": {
+    "dev": "pnpm --filter @cut/shared build && pnpm -r --parallel --filter @cut/web --filter @cut/server run dev",
+    "build": "pnpm -r run build",
+    "test": "pnpm --filter @cut/shared build && vitest run",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "typecheck": "pnpm -r run typecheck && tsc -p tsconfig.scripts.json",
+    "spike": "node --experimental-strip-types scripts/spike/index.ts",
+    "spike:live": "node --experimental-strip-types scripts/spike/run-live.ts",
+    "check:secrets": "node scripts/check-secrets.mjs",
+    "verify:env": "node --experimental-strip-types scripts/verify-env.ts"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.0.0",
+    "@types/node": "^22.0.0",
+    "eslint": "^9.0.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "globals": "^16.0.0",
+    "prettier": "^3.0.0",
+    "typescript": "~5.9.0",
+    "typescript-eslint": "^8.0.0",
+    "vitest": "^3.2.0"
+  }
+}

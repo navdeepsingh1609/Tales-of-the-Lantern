@@ -1,0 +1,43 @@
+{
+  "mode": "live-realtime-probe",
+  "status": "failed",
+  "requestCounts": {
+    "clientSecretPosts": 1,
+    "websocketSessions": 1,
+    "modelResponses": 1
+  },
+  "timingMs": {
+    "clientSecretPost": 174,
+    "total": 45186
+  },
+  "websocketLimitSeconds": 45,
+  "events": {
+    "counts": {
+      "session.created": 1,
+      "conversation.item.added": 1,
+      "response.created": 1
+    },
+    "types": ["session.created", "conversation.item.added", "response.created"]
+  },
+  "responses": [],
+  "tool": {
+    "name": "change_set",
+    "controlledEffect": "storm",
+    "dispatched": false,
+    "completed": false
+  },
+  "docs": {
+    "clientSecrets": "https://docs.boson.ai/api-reference/realtime/client-secrets.md",
+    "clientEvents": "https://docs.boson.ai/api-reference/realtime/client-events.md",
+    "serverEvents": "https://docs.boson.ai/api-reference/realtime/server-events.md",
+    "toolCalling": "https://docs.boson.ai/models/higgs-realtime/guides/tool-calling.md",
+    "connectionsAndSessions": "https://docs.boson.ai/models/higgs-realtime/guides/connections-and-sessions.md"
+  },
+  "sessionConfig": {
+    "toolsCount": 1,
+    "changeSetDeclared": true,
+    "outputModalities": ["text"],
+    "toolChoice": "required"
+  },
+  "failureCode": "websocket_timeout"
+}

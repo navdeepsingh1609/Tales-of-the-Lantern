@@ -1,0 +1,172 @@
+.cut-studio .studio-lantern-button {
+  --lantern-tilt-x: 0deg;
+  --lantern-tilt-y: 0deg;
+  position: relative;
+  display: grid;
+  width: 64px;
+  height: 88px;
+  min-height: 88px;
+  flex: none;
+  place-items: center;
+  padding: 0;
+  overflow: visible;
+  border: 0;
+  border-radius: 14px;
+  background: transparent;
+  color: #ddb96f;
+  cursor: pointer;
+  filter: drop-shadow(0 2px 6px #daa65016);
+  perspective: 300px;
+  transform: perspective(300px) rotateX(var(--lantern-tilt-y)) rotateY(var(--lantern-tilt-x));
+  transform-style: preserve-3d;
+  animation: studio-lantern-sway 4.2s ease-in-out infinite;
+  transition:
+    color 220ms ease,
+    filter 260ms ease,
+    transform 180ms ease;
+}
+.cut-studio .studio-lantern-button:hover,
+.cut-studio .studio-lantern-button:focus-visible {
+  color: #f2d48e;
+  filter: drop-shadow(0 0 7px #edc87584) drop-shadow(0 0 19px #e4a6425e);
+  animation: studio-lantern-sway-wide 1.8s ease-in-out infinite;
+}
+.cut-studio .studio-lantern-button:focus-visible {
+  outline: 2px solid #e2c27e;
+  outline-offset: 2px;
+}
+.studio-lantern-art {
+  display: block;
+  width: 60px;
+  height: 86px;
+  overflow: visible;
+  transform: translateZ(6px);
+}
+.lantern-handle,
+.lantern-handle-inner,
+.lantern-cap-ridge,
+.lantern-vent,
+.lantern-glass-glint,
+.lantern-guardrail,
+.lantern-crosswire,
+.lantern-base-ridge,
+.lantern-wick,
+.lantern-foot {
+  fill: none;
+  stroke: url(#studio-lantern-brass);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.lantern-handle {
+  stroke-width: 3.6;
+  filter: drop-shadow(0 0.5px 0 #573a1d);
+}
+.lantern-handle-inner {
+  stroke: #ffe6a4;
+  stroke-width: 0.9;
+  opacity: 0.68;
+}
+.lantern-cap,
+.lantern-collar,
+.lantern-base {
+  fill: url(#studio-lantern-brass);
+  stroke: #624522;
+  stroke-width: 1;
+  stroke-linejoin: round;
+}
+.lantern-cap-ridge {
+  stroke: #f6dfa2;
+  stroke-width: 0.8;
+  opacity: 0.84;
+}
+.lantern-vent {
+  stroke: #63451f;
+  stroke-width: 1.2;
+  opacity: 0.85;
+}
+.lantern-glass {
+  fill: url(#studio-lantern-glass);
+  stroke: #efcf89;
+  stroke-width: 0.95;
+  stroke-linejoin: round;
+}
+.lantern-glass-flare {
+  fill: url(#studio-lantern-glass-flare);
+  opacity: 0.86;
+}
+.lantern-glass-glint {
+  stroke: #fff5d8;
+  stroke-width: 1.1;
+  opacity: 0.86;
+}
+.lantern-guardrail {
+  stroke-width: 2.4;
+  filter: drop-shadow(0 0.6px 0 #5d3f20);
+}
+.lantern-crosswire {
+  stroke: #f2d58d;
+  stroke-width: 1.25;
+  opacity: 0.86;
+}
+.lantern-flame {
+  fill: url(#studio-lantern-flame);
+  filter: drop-shadow(0 0 4px #ffc451c4);
+  transform-origin: 33px 60px;
+  transition: filter 220ms ease;
+}
+.lantern-flame-core {
+  fill: #fff5c8;
+  opacity: 0.92;
+}
+.lantern-wick,
+.lantern-base-ridge {
+  stroke: #fae4a7;
+  stroke-width: 1;
+  opacity: 0.82;
+}
+.lantern-wick {
+  stroke: #fff0c7;
+  stroke-width: 1.6;
+}
+.lantern-foot {
+  stroke: #77532a;
+  stroke-width: 1.25;
+}
+.studio-lantern-button.is-lit .lantern-flame,
+.studio-lantern-button:hover .lantern-flame,
+.studio-lantern-button:focus-visible .lantern-flame {
+  filter: drop-shadow(0 0 6px #fff0a4) drop-shadow(0 0 12px #ffa832);
+}
+.studio-lantern-button.is-lit .lantern-glass {
+  fill: #f9c56d66;
+}
+@keyframes studio-lantern-sway {
+  0%,
+  100% {
+    rotate: -2deg;
+  }
+  50% {
+    rotate: 1deg;
+  }
+}
+@keyframes studio-lantern-sway-wide {
+  0%,
+  100% {
+    rotate: -6deg;
+  }
+  50% {
+    rotate: 4deg;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .cut-studio .studio-lantern-button,
+  .cut-studio .studio-lantern-button:hover,
+  .cut-studio .studio-lantern-button:focus-visible {
+    animation: none;
+    rotate: 0deg;
+    transform: none;
+    transition:
+      color 180ms ease,
+      filter 180ms ease;
+  }
+}

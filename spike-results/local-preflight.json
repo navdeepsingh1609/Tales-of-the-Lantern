@@ -1,0 +1,36 @@
+{
+  "mode": "local-only-capability-check",
+  "networkCallsMade": 0,
+  "node": {
+    "version": "26.12.1",
+    "minimum": "22.18.0",
+    "meetsMinimum": true
+  },
+  "budgetPolicy": {
+    "currency": "CAD",
+    "projectCeiling": 30,
+    "demoReserve": 25,
+    "developmentCeiling": 5,
+    "paidCallsEnabled": false,
+    "policyOnly": true
+  },
+  "fixture": {
+    "path": "content/scenes/lighthouse.json",
+    "validJson": true,
+    "actorCount": 3,
+    "lineCount": 8,
+    "schemaValidated": false
+  },
+  "secretHandling": {
+    "envFileRead": false,
+    "envIgnored": true,
+    "envTracked": false,
+    "envLocalIgnored": true,
+    "envLocalTracked": false
+  },
+  "limitations": [
+    "Budget config describes policy and does not enforce provider or server spending.",
+    "Fixture was parsed as JSON only; the shared scene schema was not imported or validated.",
+    "No .env contents were read."
+  ]
+}

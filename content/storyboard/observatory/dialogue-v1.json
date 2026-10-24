@@ -1,0 +1,25 @@
+{
+  "scene": "observatory",
+  "lines": [
+    {
+      "actor": "odile",
+      "text": "The old mirror can throw a lantern beam across the valley. But one flash means danger, not home.",
+      "emotion": "contemplation"
+    },
+    {
+      "actor": "pim",
+      "text": "I found three marks on the brass dial. Is that the home signal, or am I reading the chart upside down?",
+      "emotion": "confusion"
+    },
+    {
+      "actor": "rocco",
+      "text": "Three flashes, then a pause. My sister taught me that from the ridge. She'll know we're alive.",
+      "emotion": "longing"
+    },
+    {
+      "actor": "odile",
+      "text": "You read it right, Pim. Turn the mirror west. There—three lights answered from the valley. We have a way home.",
+      "emotion": "relief"
+    }
+  ]
+}

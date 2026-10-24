@@ -1,0 +1,98 @@
+{
+  "model": "higgs-avatar",
+  "input": "3-second 24kHz mono silent PCM WAV",
+  "generatedAt": "2026-10-24",
+  "scope": "Idle reaction clips; exact blink/nod/body actions not directly controlled",
+  "clips": [
+    {
+      "actor": "odile",
+      "scene": "lighthouse",
+      "file": "apps/web/public/scenes/gull-point/idle-odile-v1.mp4",
+      "reference": "content/characters/odile/avatar-lighthouse-landscape-v1.png",
+      "sha256": "41e162f454e4ecbdd9c1c6ff2d00ac2169836df2b8b2ace04c11f070ff03a024",
+      "bytes": 852422,
+      "inputDurationSeconds": 3,
+      "httpStatus": 200
+    },
+    {
+      "actor": "rocco",
+      "scene": "lighthouse",
+      "file": "apps/web/public/scenes/gull-point/idle-rocco-v1.mp4",
+      "reference": "content/characters/rocco/avatar-lighthouse-landscape-v1.png",
+      "sha256": "701398be8f619302146625c1a0b9765ead0be8469881c803891520f44a101ac4",
+      "bytes": 732460,
+      "inputDurationSeconds": 3,
+      "httpStatus": 200
+    },
+    {
+      "actor": "pim",
+      "scene": "lighthouse",
+      "file": "apps/web/public/scenes/gull-point/idle-pim-v1.mp4",
+      "reference": "content/characters/pim/avatar-lighthouse-landscape-v1.png",
+      "sha256": "c607ac52e882af7b94eac5a82865e96f55d4c5cc26e009df5cdcc0088bc66b54",
+      "bytes": 718813,
+      "inputDurationSeconds": 3,
+      "httpStatus": 200
+    },
+    {
+      "actor": "odile",
+      "scene": "tavern",
+      "file": "apps/web/public/scenes/tavern/idle-odile-v1.mp4",
+      "reference": "content/characters/odile/avatar-tavern-landscape-v1.png",
+      "sha256": "10e5f002ea7c4ab9a7b57af68d102ae73b37b71069e9a7a322333bb9dee90890",
+      "bytes": 773323,
+      "inputDurationSeconds": 3,
+      "httpStatus": 200
+    },
+    {
+      "actor": "rocco",
+      "scene": "tavern",
+      "file": "apps/web/public/scenes/tavern/idle-rocco-v1.mp4",
+      "reference": "content/characters/rocco/avatar-tavern-landscape-v1.png",
+      "sha256": "ea5d7d31dc4305249c2d202c37e504af17e51bfbfe329dcd124b5e6caaa518b7",
+      "bytes": 765064,
+      "inputDurationSeconds": 3,
+      "httpStatus": 200
+    },
+    {
+      "actor": "pim",
+      "scene": "tavern",
+      "file": "apps/web/public/scenes/tavern/idle-pim-v1.mp4",
+      "reference": "content/characters/pim/avatar-tavern-landscape-v1.png",
+      "sha256": "37cf78c151371091eff4dd3346bfede6c5e4010d09774cc612fe07fe058254eb",
+      "bytes": 784174,
+      "inputDurationSeconds": 3,
+      "httpStatus": 200
+    },
+    {
+      "actor": "odile",
+      "scene": "observatory",
+      "file": "apps/web/public/scenes/observatory/idle-odile-v1.mp4",
+      "reference": "content/characters/odile/avatar-observatory-landscape-v1.png",
+      "sha256": "24e45a13052b414ed91cd10e5fbdfdd7d9cddb001f9c0bec2b159ec51b0cfc9e",
+      "bytes": 858599,
+      "inputDurationSeconds": 3,
+      "httpStatus": 200
+    },
+    {
+      "actor": "rocco",
+      "scene": "observatory",
+      "file": "apps/web/public/scenes/observatory/idle-rocco-v1.mp4",
+      "reference": "content/characters/rocco/avatar-observatory-landscape-v1.png",
+      "sha256": "4268b789517bd848202348d251587edb0597bb37c593a4b24934cfc2d6713f62",
+      "bytes": 837717,
+      "inputDurationSeconds": 3,
+      "httpStatus": 200
+    },
+    {
+      "actor": "pim",
+      "scene": "observatory",
+      "file": "apps/web/public/scenes/observatory/idle-pim-v1.mp4",
+      "reference": "content/characters/pim/avatar-observatory-landscape-v1.png",
+      "sha256": "2d09015470c7eea3e118382cfd198d09709df2be2b8ad7dafb2e95ae67e0d410",
+      "bytes": 851759,
+      "inputDurationSeconds": 3,
+      "httpStatus": 200
+    }
+  ]
+}

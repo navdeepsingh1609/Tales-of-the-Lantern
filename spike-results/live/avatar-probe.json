@@ -1,0 +1,19 @@
+{
+  "outcome": "PASS",
+  "referenceImageBytes": 12860,
+  "audioBytes": 197804,
+  "videoBytes": 741317,
+  "firstByteMs": 1551.388583,
+  "totalMs": 4853.095292,
+  "docs": [
+    "https://docs.boson.ai/api-reference/videos/create-a-video-streaming.md",
+    "https://docs.boson.ai/api-reference/videos/create-a-video.md",
+    "https://docs.boson.ai/models/higgs-avatar/input-options.md",
+    "https://docs.boson.ai/models/higgs-avatar/streaming-video.md",
+    "https://docs.boson.ai/api-reference/errors.md"
+  ],
+  "audioDurationSeconds": 4.12,
+  "status": 200,
+  "savedPath": "avatar-probe.mp4",
+  "videoId": "video_d081b864ead7425db1cdf058"
+}

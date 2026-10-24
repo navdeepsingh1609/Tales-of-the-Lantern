@@ -1,0 +1,303 @@
+.direction-panel {
+  margin: 12px 0 16px;
+  padding: clamp(15px, 2vw, 22px);
+  border: 1px solid var(--studio-line, #b8c4ab28);
+  border-radius: 10px;
+  background:
+    radial-gradient(ellipse at 100% 0, #bdc9aa0b, transparent 50%),
+    linear-gradient(145deg, #ffffff06, transparent 56%), #111a16;
+  box-shadow:
+    inset 0 1px 0 #ffffff0c,
+    0 10px 28px #050b0870;
+}
+.direction-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 14px;
+}
+.direction-eyebrow {
+  color: var(--studio-accent, #bdc9aa);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.direction-heading h2 {
+  margin: 4px 0 0;
+  color: var(--studio-paper, #e7e6db);
+  font:
+    500 clamp(18px, 2vw, 23px)/1.25 Cinzel,
+    Georgia,
+    serif;
+}
+.direction-heading > p {
+  margin: 0 0 2px;
+  color: var(--studio-muted, #a3afa4);
+  font-size: 13px;
+}
+.direction-transcript {
+  margin: 14px 0 0;
+  padding: 11px 14px;
+  border-left: 2px solid var(--studio-accent, #bdc9aa);
+  border-radius: 0 6px 6px 0;
+  background: #090f0c99;
+  color: var(--studio-paper, #e7e6db);
+  font:
+    16px/1.55 Georgia,
+    serif;
+}
+.direction-mood {
+  margin: 16px 0 0;
+}
+.direction-mood-label {
+  display: block;
+  margin-bottom: 9px;
+  color: var(--studio-muted, #a3afa4);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+}
+.direction-mood-range {
+  display: block;
+  width: 100%;
+  height: 28px;
+  margin: 0;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+}
+.direction-mood-range::-webkit-slider-runnable-track {
+  height: 4px;
+  border-radius: 999px;
+  background: #485747;
+}
+.direction-mood-range::-moz-range-track {
+  height: 4px;
+  border-radius: 999px;
+  background: #485747;
+}
+.direction-mood-range::-webkit-slider-thumb {
+  width: 19px;
+  height: 19px;
+  margin-top: -7.5px;
+  appearance: none;
+  border: 2px solid #f1e4bd;
+  border-radius: 50%;
+  background: #b8c59e;
+  box-shadow:
+    0 0 0 4px #bdc9aa1e,
+    0 2px 8px #03080688;
+}
+.direction-mood-range::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #f1e4bd;
+  border-radius: 50%;
+  background: #b8c59e;
+  box-shadow:
+    0 0 0 4px #bdc9aa1e,
+    0 2px 8px #03080688;
+}
+.direction-mood-range:focus-visible {
+  outline: 2px solid var(--studio-accent, #bdc9aa);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+.direction-mood-stops {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 4px;
+  margin-top: 6px;
+}
+.cut-studio .direction-panel .direction-mood-stop {
+  display: flex;
+  min-width: 0;
+  min-height: 50px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  padding: 4px 2px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--studio-muted, #a3afa4);
+  cursor: pointer;
+  transition:
+    background 140ms ease,
+    border-color 140ms ease,
+    color 140ms ease;
+}
+.cut-studio .direction-panel .direction-mood-stop > span {
+  font-size: 19px;
+  line-height: 1;
+}
+.cut-studio .direction-panel .direction-mood-stop small {
+  overflow: hidden;
+  max-width: 100%;
+  font-size: 10px;
+  line-height: 1.2;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.cut-studio .direction-panel .direction-mood-stop:hover:not(:disabled) {
+  border-color: #bdc9aa50;
+  background: #ffffff0a;
+  color: var(--studio-paper, #e7e6db);
+}
+.cut-studio .direction-panel .direction-mood-stop.is-active {
+  border-color: #bdc9aa7a;
+  background: linear-gradient(145deg, #bdc9aa1c, #bdc9aa08);
+  color: var(--studio-paper, #e7e6db);
+  box-shadow: inset 0 1px 0 #ffffff13;
+}
+.cut-studio .direction-panel .direction-mood-stop:focus-visible {
+  outline: 2px solid var(--studio-accent, #bdc9aa);
+  outline-offset: 2px;
+}
+.direction-mood-caption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 8px;
+}
+.direction-mood-caption > strong {
+  color: var(--studio-paper, #e7e6db);
+  font-size: 13px;
+  font-weight: 550;
+}
+.direction-mood-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 5px;
+}
+.direction-mood-tags > span {
+  padding: 3px 7px;
+  border: 1px solid #bdc9aa32;
+  border-radius: 999px;
+  background: #bdc9aa0b;
+  color: #c9d4bb;
+  font-size: 10px;
+  line-height: 1.3;
+}
+.direction-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 14px;
+}
+.cut-studio .direction-panel button {
+  min-height: 44px;
+  padding: 8px 15px;
+  border: 1px solid #b8c4ab55;
+  border-radius: 8px;
+  background: #18231c;
+  color: var(--studio-paper, #e7e6db);
+  cursor: pointer;
+  font:
+    600 13px/1.2 ui-sans-serif,
+    system-ui,
+    sans-serif;
+  transition:
+    background 150ms ease,
+    border-color 150ms ease;
+}
+.cut-studio .direction-panel button:hover:not(:disabled) {
+  border-color: #bdc9aa;
+  background: #243329;
+}
+.cut-studio .direction-panel button:focus-visible {
+  outline: 2px solid var(--studio-accent, #bdc9aa);
+  outline-offset: 3px;
+}
+.cut-studio .direction-panel button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+.cut-studio .direction-panel .direction-generate {
+  border-color: var(--studio-accent, #bdc9aa);
+  background: var(--studio-accent, #bdc9aa);
+  color: #18211a;
+}
+.cut-studio .direction-panel .direction-generate:hover:not(:disabled) {
+  background: #d2dcc2;
+}
+.direction-auditions {
+  display: flex;
+  gap: 8px;
+}
+.direction-progress,
+.direction-help {
+  display: flex;
+  min-height: 20px;
+  align-items: center;
+  gap: 9px;
+  margin: 12px 0 0;
+  color: var(--studio-muted, #a3afa4);
+  font-size: 12px;
+  line-height: 1.5;
+}
+.direction-spinner {
+  width: 14px;
+  height: 14px;
+  flex: none;
+  border: 2px solid #bdc9aa40;
+  border-top-color: var(--studio-accent, #bdc9aa);
+  border-radius: 50%;
+  animation: direction-spin 800ms linear infinite;
+}
+@keyframes direction-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (max-width: 640px) {
+  .direction-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .direction-mood-stops {
+    gap: 1px;
+  }
+  .cut-studio .direction-panel .direction-mood-stop small {
+    font-size: 9px;
+  }
+  .direction-mood-caption {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .direction-mood-tags {
+    justify-content: flex-start;
+  }
+  .direction-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+  .direction-panel .direction-generate {
+    width: 100%;
+  }
+  .direction-auditions > button {
+    flex: 1;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .direction-panel *,
+  .direction-panel *::before,
+  .direction-panel *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+@media (forced-colors: active) {
+  .direction-panel,
+  .direction-choice,
+  .direction-panel button {
+    border: 1px solid CanvasText;
+    forced-color-adjust: auto;
+  }
+}

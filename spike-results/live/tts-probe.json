@@ -1,0 +1,18 @@
+{
+  "model": "higgs-tts-3",
+  "voice": "jake",
+  "responseFormat": "pcm",
+  "streamed": true,
+  "pcmBytes": 197760,
+  "firstAudioMs": 1079.295333,
+  "audioDurationMs": 4120,
+  "docs": [
+    "https://docs.boson.ai/api-reference/audio/create-a-speech.md",
+    "https://docs.boson.ai/models/higgs-tts/overview.md",
+    "https://docs.boson.ai/api-reference/errors.md"
+  ],
+  "outcome": "PASS",
+  "status": 200,
+  "totalMs": 3028.5167079999997,
+  "wavFile": "tts-probe.wav"
+}

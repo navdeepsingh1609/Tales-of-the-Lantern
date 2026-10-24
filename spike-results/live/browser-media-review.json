@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-24",
+  "browser": "Google Chrome on the user's Mac",
+  "observer": "agent via native browser controls",
+  "source": "saved real Avatar probe output",
+  "mseCompatibility": "PASS",
+  "decodedWidth": 480,
+  "decodedHeight": 640,
+  "codecTested": "video/mp4; codecs=\"avc1.64001e, mp4a.40.2\"",
+  "playbackObserved": true,
+  "newProviderRequests": 0,
+  "limitations": [
+    "Saved clip replay verifies decode and MediaSource compatibility, not upstream-to-first-frame latency.",
+    "Simultaneous three-actor video and microphone playback have not been tested.",
+    "Listening and lip-sync quality require human judgment."
+  ]
+}

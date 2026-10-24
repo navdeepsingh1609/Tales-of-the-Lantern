@@ -1,0 +1,41 @@
+{
+  "generatedAt": "2026-10-24",
+  "scene": "lighthouse",
+  "actor": "odile",
+  "voice": "eleanor",
+  "models": ["higgs-tts-3", "higgs-avatar"],
+  "text": "You crossed that sea to bring me a letter. Tell me why I should open it.",
+  "reference": "content/characters/odile/avatar-lighthouse-landscape-v1.png",
+  "size": "640x480",
+  "replayDisclosure": "Both takes are saved real Boson outputs. Replaying makes no generation call.",
+  "takes": {
+    "original": {
+      "tags": ["emotion:contemplation"],
+      "audio": {
+        "file": "original.wav",
+        "sha256": "13f3951995c9faf1b2b9085a8e7a199d2a2826721924cdde3b45ef5dc6a3bf0a",
+        "bytes": 236204
+      },
+      "video": {
+        "file": "original.mp4",
+        "sha256": "48d41e4e772f160fd0b5972667b1d6dd13b9993b04b68f5338a4ffa8b1dcbe5d",
+        "bytes": 1595398
+      },
+      "wavDurationSeconds": 4.92
+    },
+    "directed": {
+      "tags": ["emotion:determination", "prosody:expressive_high"],
+      "audio": {
+        "file": "directed.wav",
+        "sha256": "3c24112ae6ea1fb1ce1517d6a71ba961bf8a97a4dadf222b3efd55c71890ecbf",
+        "bytes": 180524
+      },
+      "video": {
+        "file": "directed.mp4",
+        "sha256": "e77b1d6a513e55fa2a2d3d3da340126dcaaecc3bc402ff163fd0c43e91fd4a03",
+        "bytes": 1374709
+      },
+      "wavDurationSeconds": 3.76
+    }
+  }
+}

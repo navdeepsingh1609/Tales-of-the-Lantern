@@ -1,0 +1,41 @@
+.idle-reaction {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 180ms ease-out;
+}
+.idle-reaction[data-ready='true'] {
+  opacity: 1;
+}
+.idle-reaction[data-failed='true'] {
+  display: none;
+}
+.idle-reaction video,
+.idle-reaction-frame {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 26%;
+}
+.idle-reaction-frame {
+  z-index: 1;
+  opacity: 1;
+  transition: opacity 220ms ease-out;
+}
+.idle-reaction-frame.is-fading {
+  opacity: 0;
+}
+.idle-reaction-frame[hidden] {
+  display: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .idle-reaction,
+  .idle-reaction-frame {
+    transition: none;
+  }
+}

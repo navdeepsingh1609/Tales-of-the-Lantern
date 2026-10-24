@@ -1,0 +1,10 @@
+node_modules
+.pnpm-store
+**/dist
+coverage
+pnpm-lock.yaml
+.env*
+!.env.example
+AGENT_PROMPT.md
+docs/0*.md
+content/scenes/lighthouse.json

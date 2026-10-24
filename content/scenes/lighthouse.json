@@ -1,0 +1,46 @@
+{
+  "id": "lighthouse",
+  "title": "The Lighthouse at Gull Point",
+  "notes": "Tags use only documented Higgs TTS 3 tags. Every sfx tag is followed by onomatopoeia. Each line stays under 300 characters. Spanish variants are hand-written; review by a Spanish speaker before the demo.",
+  "actors": ["odile", "rocco", "pim"],
+  "lines": [
+    { "id": "l1", "actor": "odile", "lang": "en",
+      "tags": ["emotion:contentment", "prosody:speed_slow"],
+      "text": "The glass has been dark since March. <|prosody:pause|> Nobody asked why." },
+    { "id": "l2", "actor": "rocco", "lang": "en",
+      "tags": ["emotion:amusement"],
+      "text": "<|sfx:laughter|>Haha, nobody asks anything out here, Captain. That's why I like the place." },
+    { "id": "l3", "actor": "pim", "lang": "en",
+      "tags": ["style:whispering"],
+      "text": "<|sfx:sniff|>Sff... Captain? The barometer just dropped again. <|prosody:pause|> A lot." },
+    { "id": "l4", "actor": "odile", "lang": "en",
+      "tags": ["emotion:anger", "prosody:speed_fast"],
+      "text": "Then he can stay out in it. Both of you, sit down and be quiet." },
+    { "id": "l5", "actor": "rocco", "lang": "en",
+      "tags": ["emotion:enthusiasm"],
+      "text": "Quiet? Captain, I have eleven crates of reasons to be loud. <|prosody:pause|> Fine. Fine! I'll count them instead." },
+    { "id": "l6", "actor": "pim", "lang": "en",
+      "tags": ["emotion:fear"],
+      "text": "<|sfx:sneeze|>Achoo! Sorry. Sorry! Is that thunder, or is that me?" },
+    { "id": "l7", "actor": "odile", "lang": "en",
+      "tags": ["emotion:sadness", "prosody:speed_slow"],
+      "text": "<|sfx:sigh|>Ahh. <|prosody:long_pause|> He used to count the waves for me. Every night, out loud." },
+    { "id": "l8", "actor": "rocco", "lang": "en",
+      "tags": ["emotion:contemplation"],
+      "text": "Then let's count them together, Captain. <|prosody:pause|> One. Two. Tres." }
+  ],
+  "variants": {
+    "es": {
+      "l1": "El cristal lleva apagado desde marzo. <|prosody:pause|> Nadie preguntó por qué.",
+      "l2": "<|sfx:laughter|>Jaja, aquí nadie pregunta nada, capitana. Por eso me gusta este lugar.",
+      "l4": "Pues que se quede ahí fuera con la tormenta. Los dos, sentaos y callaos.",
+      "l5": "¿Callarme? Capitana, tengo once cajas de razones para hacer ruido. <|prosody:pause|> Vale. ¡Vale! Las contaré en su lugar.",
+      "l7": "<|sfx:sigh|>Ahh. <|prosody:long_pause|> Él me contaba las olas. Cada noche, en voz alta.",
+      "l8": "Entonces contémoslas juntos, capitana. <|prosody:pause|> Uno. Dos. Tres."
+    }
+  },
+  "cues": [
+    { "at": "l4", "tool": "change_set", "args": { "effect": "storm", "intensity": 0.6 } },
+    { "at": "l6", "tool": "change_set", "args": { "effect": "lightning" } }
+  ]
+}

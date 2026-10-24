@@ -1,0 +1,8 @@
+packages:
+  - 'apps/*'
+  - 'packages/*'
+
+# Keep installation state inside this checkout. Only esbuild needs a build step.
+storeDir: .pnpm-store
+allowBuilds:
+  esbuild: true

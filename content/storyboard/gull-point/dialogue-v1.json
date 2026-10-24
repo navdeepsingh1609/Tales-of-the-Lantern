@@ -1,0 +1,35 @@
+{
+  "scene": "lighthouse",
+  "lines": [
+    {
+      "actor": "odile",
+      "text": "You crossed that sea to bring me a letter. Tell me why I should open it.",
+      "emotion": "contemplation"
+    },
+    {
+      "actor": "rocco",
+      "text": "Because he asked me to bring it home. I didn't know the keeper was his mother.",
+      "emotion": "sadness"
+    },
+    {
+      "actor": "pim",
+      "text": "Captain, the lantern's fading. There's a boat beyond the rocks. It can't see us.",
+      "emotion": "fear"
+    },
+    {
+      "actor": "odile",
+      "text": "He used to count the waves while I lit the lamp. I haven't heard him in years.",
+      "emotion": "sadness"
+    },
+    {
+      "actor": "rocco",
+      "text": "Then you read. I'll hold the light. Pim, count with me. One. Two.",
+      "emotion": "determination"
+    },
+    {
+      "actor": "pim",
+      "text": "Three. Four. Captain, look. She's turning toward the harbour.",
+      "emotion": "relief"
+    }
+  ]
+}

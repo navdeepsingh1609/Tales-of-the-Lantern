@@ -1,0 +1,25 @@
+{
+  "scene": "tavern",
+  "lines": [
+    {
+      "actor": "odile",
+      "text": "The seal is still whole. Why bring it to my table if you won't tell me whose hand I must trust?",
+      "emotion": "contemplation"
+    },
+    {
+      "actor": "rocco",
+      "text": "The courier said the silver coin buys a guide through the north pass. He didn't say who sent the letter.",
+      "emotion": "confusion"
+    },
+    {
+      "actor": "pim",
+      "text": "That stamp matches the coin. Look—the same little star. The pass is our only road home before dawn.",
+      "emotion": "determination"
+    },
+    {
+      "actor": "rocco",
+      "text": "Then we open it together. If the sender wants us home, we spend the coin at first light.",
+      "emotion": "relief"
+    }
+  ]
+}
